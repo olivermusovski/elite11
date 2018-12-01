@@ -57,7 +57,7 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 3.5rem;
             }
 
             .links > a {
@@ -71,7 +71,7 @@
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-bottom: 0px;
             }
         </style>
     </head>
