@@ -4,10 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Elite 11</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+
+        <!-- Scripts -->
+        <script src="{{ asset('js/app.js') }}" defer></script>
+
+        <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -40,6 +46,12 @@
                 top: 18px;
             }
 
+            .top-left {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+
             .content {
                 text-align: center;
             }
@@ -64,7 +76,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-height border-top-8 border-green">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -79,20 +91,21 @@
                 </div>
             @endif
 
+            <div class="top-left">
+                 <img class="img-fluid h-25 w-25" src="{{ asset('images/logo.png') }}">
+            </div>
+
             <div class="content">
+                
                 <div class="title m-b-md">
-                    Laravel
+                    Welcome
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div>
+                    <img class="img-fluid mx-auto d-block h-75 w-75" src="{{ asset('images/uploading.png') }}">
                 </div>
             </div>
         </div>
     </body>
 </html>
+
